@@ -1,0 +1,161 @@
+<mvc:View controllerName="resume.resume.controller.Resume" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:uxap="sap.uxap" xmlns:layout="sap.ui.layout" xmlns:f="sap.f" xmlns:card="sap.f.cards" xmlns:common="sap.suite.ui.commons"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:form="sap.ui.layout.form">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}" showHeader="false">
+					<content>
+						<uxap:ObjectPageLayout enableLazyLoading="false" subSectionLayout="TitleOnLeft" showTitleInHeaderContent="true" showHeaderContent="true">
+							<uxap:headerTitle>
+								<uxap:ObjectPageHeader objectImageURI="./images/vhs.jpg" objectImageShape="Circle" objectTitle="Victor Souza"
+									objectSubtitle="ABAP/UI5 Consultant" objectImageAlt="ABAP/UI Consultant" isObjectIconAlwaysVisible="false"
+									isObjectTitleAlwaysVisible="false" isObjectSubtitleAlwaysVisible="false" isActionAreaAlwaysVisible="true" showPlaceholder="true"/>
+							</uxap:headerTitle>
+							<uxap:headerContent>
+								<layout:VerticalLayout>
+									<Link text="victor_hugo_souza@yahoo.com.br" press="OnMailPress"/>
+									<Text text="São Paulo, Brazil"/>
+								</layout:VerticalLayout>
+								<layout:VerticalLayout>
+									<f:Avatar src="./images/linkedin.jpg" displaySize="M" displayShape="Square" press="OnLinkedinPress"></f:Avatar>
+								</layout:VerticalLayout>
+							</uxap:headerContent>
+							<uxap:sections>
+								<uxap:ObjectPageSection title="Strengths">
+									<uxap:subSections>
+										<uxap:ObjectPageSubSection>
+											<uxap:blocks>
+												<List items="{strength>/content}">
+													<items>
+														<StandardListItem wrapping="{device>/system/phone}" title="{strength>text}" icon="sap-icon://accept"/>
+													</items>
+												</List>
+											</uxap:blocks>
+										</uxap:ObjectPageSubSection>
+									</uxap:subSections>
+								</uxap:ObjectPageSection>
+								<uxap:ObjectPageSection title="Languages">
+									<uxap:subSections>
+										<uxap:ObjectPageSubSection>
+											<uxap:blocks>
+												<form:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="5"
+													adjustLabelSpan="false" emptySpanXL="1" emptySpanL="1" emptySpanM="1" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+													singleContainerFullSize="true">
+													<form:content>
+														<Label text="Portuguese"/>
+														<RatingIndicator editable="false" value="5" tooltip="Portuguese Rating Tooltip"/>
+														<Label text="English"/>
+														<RatingIndicator editable="false" value="4.5" tooltip="English Rating Tooltip"/>
+														<Label text="Spanish"/>
+														<RatingIndicator editable="false" value="1.5" tooltip="Spanish Rating Tooltip"/>
+													</form:content>
+												</form:SimpleForm>
+											</uxap:blocks>
+										</uxap:ObjectPageSubSection>
+									</uxap:subSections>
+								</uxap:ObjectPageSection>
+								<uxap:ObjectPageSection title="Professional Experience">
+									<uxap:subSections>
+										<uxap:ObjectPageSubSection>
+											<uxap:blocks>
+												<common:Timeline id="experienceTimeline" content="{experience>/content}" enableDoubleSided="false" showItemFilter="false" showSort="false"
+													showTimeFilter="false" showSearch="false" sort="false" axisOrientation="Vertical" enableScroll="false">
+													<common:content>
+														<common:TimelineItem dateTime="{experience>admission}" title="{experience>company}" userNameClickable="false" text="{experience>activities}"
+															userName="{experience>title}" icon="{experience>icon}" filterValue="{experience>admission}" userPicture="{experience>image}"/>
+													</common:content>
+												</common:Timeline>
+											</uxap:blocks>
+										</uxap:ObjectPageSubSection>
+									</uxap:subSections>
+								</uxap:ObjectPageSection>
+								<uxap:ObjectPageSection title="Main Projects">
+									<uxap:subSections>
+										<uxap:ObjectPageSubSection>
+											<uxap:blocks>
+												<f:Card class="sapUiTinyMargin">
+													<f:header>
+														<card:Header title="{projects>/content/0/title}" subtitle="{projects>/content/0/customer}" iconSrc="{projects>/content/0/customerLogo}"/>
+													</f:header>
+													<f:content>
+														<Text class="sapUiSmallMargin" text="{projects>/content/0/description}" renderWhitespace="true"></Text>
+													</f:content>
+												</f:Card>
+												<f:Card class="sapUiTinyMargin">
+													<f:header>
+														<card:Header title="{projects>/content/1/title}" subtitle="{projects>/content/1/customer}" iconSrc="{projects>/content/1/customerLogo}"/>
+													</f:header>
+													<f:content>
+														<Text class="sapUiSmallMargin" text="{projects>/content/1/description}" renderWhitespace="true"></Text>
+													</f:content>
+												</f:Card>
+												<f:Card class="sapUiTinyMargin">
+													<f:header>
+														<card:Header title="{projects>/content/2/title}" subtitle="{projects>/content/2/customer}" iconSrc="{projects>/content/2/customerLogo}"/>
+													</f:header>
+													<f:content>
+														<Text class="sapUiSmallMargin" text="{projects>/content/2/description}" renderWhitespace="true"></Text>
+													</f:content>
+												</f:Card>
+												<f:Card class="sapUiTinyMargin">
+													<f:header>
+														<card:Header title="{projects>/content/3/title}" subtitle="{projects>/content/3/customer}" iconSrc="{projects>/content/3/customerLogo}"/>
+													</f:header>
+													<f:content>
+														<Text class="sapUiSmallMargin" text="{projects>/content/3/description}" renderWhitespace="true"></Text>
+													</f:content>
+												</f:Card>
+												<f:Card class="sapUiTinyMargin">
+													<f:header>
+														<card:Header title="{projects>/content/4/title}" subtitle="{projects>/content/4/customer}" iconSrc="{projects>/content/4/customerLogo}"/>
+													</f:header>
+													<f:content>
+														<Text class="sapUiSmallMargin" text="{projects>/content/4/description}" renderWhitespace="true"></Text>
+													</f:content>
+												</f:Card>
+												<f:Card class="sapUiTinyMargin">
+													<f:header>
+														<card:Header title="{projects>/content/5/title}" subtitle="{projects>/content/5/customer}" iconSrc="{projects>/content/5/customerLogo}"/>
+													</f:header>
+													<f:content>
+														<Text class="sapUiSmallMargin" text="{projects>/content/5/description}" renderWhitespace="true"></Text>
+													</f:content>
+												</f:Card>
+											</uxap:blocks>
+										</uxap:ObjectPageSubSection>
+									</uxap:subSections>
+								</uxap:ObjectPageSection>
+								<uxap:ObjectPageSection title="Knowledges">
+									<uxap:subSections>
+										<uxap:ObjectPageSubSection>
+											<uxap:blocks>
+												<viz:VizFrame id="knowledgeVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%" vizType="bar" legendVisible="false">
+													<viz:dataset>
+														<viz.data:FlattenedDataset data="{knowledge>/content}">
+															<viz.data:dimensions>
+																<viz.data:DimensionDefinition name="Knowledge" value="{knowledge>text}"/>
+															</viz.data:dimensions>
+															<viz.data:measures>
+																<viz.data:MeasureDefinition name="Grade" value="{knowledge>grade}"/>
+															</viz.data:measures>
+														</viz.data:FlattenedDataset>
+													</viz:dataset>
+													<viz:feeds>
+														<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure" values="Grade"/>
+														<viz.feeds:FeedItem uid="categoryAxis" type="Dimension" values="Knowledge"/>
+													</viz:feeds>
+												</viz:VizFrame>
+											</uxap:blocks>
+										</uxap:ObjectPageSubSection>
+									</uxap:subSections>
+								</uxap:ObjectPageSection>
+							</uxap:sections>
+						</uxap:ObjectPageLayout>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

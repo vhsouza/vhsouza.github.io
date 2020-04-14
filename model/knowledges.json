@@ -1,0 +1,33 @@
+{
+	"content": [{
+		"text": "HTML",
+		"grade": "8"
+	}, {
+		"text": "JavaScript",
+		"grade": "8"
+	}, {
+		"text": "JQuery",
+		"grade": "6"
+	}, {
+		"text": "CSS",
+		"grade": "9"
+	}, {
+		"text": "Fiori/UI5",
+		"grade": "8"
+	}, {
+		"text": "ABAP",
+		"grade": "10"
+	}, {
+		"text": "OOP",
+		"grade": "8"
+	}, {
+		"text": "SAP Business Workflow",
+		"grade": "10"
+	}, {
+		"text": "Java",
+		"grade": "5"
+	}, {
+		"text": "Scrum",
+		"grade": "9"
+	}]
+}

@@ -1,0 +1,33 @@
+{
+	"content": [{
+		"title": "SAP Kanban Implementation",
+		"customer": "Araymond",
+		"customerLogo": "./images/araymond.png",
+		"description": "Global Project working with France and USA I.T. teams, implementing SAP Kanban standard integrated with WM/MM movements; Invetory management improvements"
+	}, {
+		"title": "Rollout Companhia Brasileira de Cartuchos x Forjas Taurus",
+		"customer": "Forjas Taurus",
+		"customerLogo": "./images/Taurus.png",
+		"description": "Responsible for evaluating programs, providing security check using authority-check and critical statements; Reports/Exits development; Complex development to control SQVI reports, using authority check and user restriction"
+	}, {
+		"title": "Sales Dashboard",
+		"customer": "Soufer Industrial",
+		"customerLogo": "./images/soufer.jpg",
+		"description": "SAP Fiori/UI5 application using charts to show sales invoice quantity by period (month/year)"
+	}, {
+		"title": "SAP Kanban Implementation",
+		"customer": "Deca/Duratex",
+		"customerLogo": "./images/duratex.jpg",
+		"description": "Development to support factory production planning; Informations were based using integration between SAP and MES (Manufacturing Execution System)"
+	}, {
+		"title": "Workflow Material Master Data",
+		"customer": "Companhia Brasileira de Cartuchos",
+		"customerLogo": "./images/CBC.png",
+		"description": "Development using SAP Business workflow enabling setting departments for each field to be filled during material master data creation. This development also included a very complex customizing setttings and parallel/dynamic Workflow approaches"
+	}, {
+		"title": "Company Integration",
+		"customer": "Forjas Taurus",
+		"customerLogo": "./images/Taurus.png",
+		"description": "Integration between two different plants in the same SAP system. Working as programmer archtect with functional team designing programs archtecture and changes needed in Exits, Workflows, Programs, Reports, and other ABAP objects"
+	}]
+}

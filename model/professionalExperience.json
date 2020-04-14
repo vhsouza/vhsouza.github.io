@@ -1,0 +1,24 @@
+{
+	"content": [{
+		"title": "ABAP/WF/UI5 Developer",
+		"company": "Trijay Consulting",
+		"admission": "May - 2017",
+		"activities": "ABAP/WF/UI5 Development and maintenance, ABAP instructor, ABAP team leader, working with functional team designing applications archtecture, integration between SAP and other technologies",
+		"icon": "sap-icon://syntax",
+		"image": "./images/trijay.png"
+	}, {
+		"title": "ABAP/WF Developer",
+		"company": "Companhia Brasileira de Cartuchos",
+		"admission": "Apr - 2012",
+		"activities": "ABAP Developer for all company modules (PP, SD, FI, CO, MM, HR), development and maintenance of workflows using SAP Business Workflow",
+		"icon": "sap-icon://developer-settings",
+		"image": "./images/CBC.png"
+	}, {
+		"title": "Infrastructure Support Analyst",
+		"company": "Companhia Brasileira de Cartuchos",
+		"admission": "Oct - 2008",
+		"activities": "Software installation, computer maintenance, computer formatting, users backup, local and network printer configuration, Switch configuration, CISCO Call Manager maintenance, thermal printer maintenance, wireless router configuration, industrial computer maintenance.",
+		"icon": "sap-icon://building",
+		"image": "./images/CBC.png"
+	}]
+}
