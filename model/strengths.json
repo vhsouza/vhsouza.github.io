@@ -1,14 +1,19 @@
 {
-	"content": [{
+	"content": [
+	{
+		"text": "SAP HANA XSA/ABAP Programming Model Development"
+	}, {
+		"text": "SAP Fiori/UI5 Development"
+	}, {
 		"text": "Object Oriented Programming (S.O.L.I.D. concepts, Design Patterns, Class, Interface, Inheritance and Polymorphism)"
 	}, {
+		"text": "SAP Business Workflow Development"
+	},{
 		"text": "ABAP leader and instructor"
 	}, {
 		"text": "ABAP/WF/Fiori development for modules PP, MM, SD, CO, FI, PS, QM, PM, WM"
-	}, {
-		"text": "Quality assurance of consulting developments"
-	}, {
-		"text": "SCRUM and agile methodologies"
+	},  {
+		"text": "Agile methodologies - SCRUM, eXtreme Programming, Kanban, and TDD"
 	}, {
 		"text": "Self-Learner"
 	}]
